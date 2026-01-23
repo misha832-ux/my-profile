@@ -1,8 +1,8 @@
 import Navbar from "./components/navbar"
 import Home from "./components/home"
-// import About from "./components/about"
+import About from "./components/about"
 // import Projects from "./components/projects"
-// import Contact from "./components/contact"
+import Contact from "./components/contact"
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
        <Navbar />
        <main>
           <Home/>
-          {/* <About/>
-          <Projects/>
-          <Contact/> */}
+          <About/>
+          {/* <Projects/> */}
+          <Contact/>
        </main>
      </div>
   )
