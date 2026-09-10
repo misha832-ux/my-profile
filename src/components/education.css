@@ -1,0 +1,49 @@
+.education {
+    background: var(--bg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline {
+    margin-top: 44px;
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -37px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gradient-main);
+    box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--border);
+}
+
+.timeline-period {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-b);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin: 8px 0 6px;
+}
+
+.timeline-institution {
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
