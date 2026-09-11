@@ -1,7 +1,5 @@
 .projects {
     background: var(--bg);
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .project-grid {
@@ -12,10 +10,15 @@
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 28px;
+    text-decoration: none;
+    color: inherit;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -39,6 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 22px;
 }
 
 .project-tags span {
@@ -48,4 +52,26 @@
     background: rgba(0, 229, 214, 0.08);
     border-radius: 6px;
     padding: 4px 10px;
+}
+
+.project-link-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.25s ease;
+}
+
+.project-arrow {
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover .project-link-row {
+    color: var(--accent-b);
+}
+
+.project-card:hover .project-arrow {
+    transform: translateX(4px);
 }
