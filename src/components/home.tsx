@@ -28,7 +28,13 @@ export default function Home() {
                 <h1>Hello, I'm <span className="gradient-text">Misha</span></h1>
                 <p>This is my portfolio</p>
                 <div className="home-actions">
-                    <button>Download CV</button>
+                    <a                
+                        href={`${process.env.PUBLIC_URL}/CV.pdf`}
+                        download="CV.pdf"
+                        className="cv-button"
+                    >
+                        Download CV
+                    </a>
                     <a href="#contact" className="ghost-link">Get in touch →</a>
                 </div>
             </div>

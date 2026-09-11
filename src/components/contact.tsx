@@ -13,11 +13,10 @@ export default function Contact() {
             ref={ref}
             className={`contact reveal ${visible ? "is-visible" : ""}`}
         >
+            <span className="section-kicker">06 / contact</span>
+            <h2 className="section-heading">Contact Me</h2>
+
             <div className="contact-card">
-                <span className="section-kicker">06 / contact</span>
-
-                <h2 className="section-heading">Contact Me</h2>
-
                 <div className="contact-links">
 
                     {/* Gmail */}

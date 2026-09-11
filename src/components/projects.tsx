@@ -3,19 +3,22 @@ import { useReveal } from "../hooks/useReveal"
 
 const PROJECTS = [
     {
-        title: "Project One",
-        description: "Replace this with a real project — what it does and the problem it solves.",
-        tags: ["React", "TypeScript"],
+        title: "Nobojatra",
+        description: "A smart travel-planning web app for comparing routes, estimating fares, checking live conditions, and saving repeat journeys — all in one place.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "BetterAuth", "MongoDB", "Mongoose"],
+        link: "https://nobojatra.onrender.com"
     },
     {
-        title: "Project Two",
-        description: "Replace this with a real project — what it does and the problem it solves.",
-        tags: ["JavaScript", "CSS"],
+        title: "Study Buddy",
+        description: "A web-based study management and productivity platform designed to help students organize tasks, improve focus, collaborate with classmates, and build productive study habits.",
+        tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", "Prisma", "Zod"],
+        link: "https://study-buddy-pqwb.onrender.com"
     },
     {
-        title: "Project Three",
-        description: "Replace this with a real project — what it does and the problem it solves.",
-        tags: ["Node.js", "API"],
+        title: "AI Assisted Writing Research Tool",
+        description: "AI-Assisted Writing Research Tool is a research data-collection web application designed to study how people write with and without AI assistance.",
+        tags: ["MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", "Prisma", "Zod"],
+        link: "https://p2-diin.onrender.com"
     },
 ]
 
@@ -28,15 +31,26 @@ export default function Projects() {
             <h2 className="section-heading">Projects</h2>
             <div className="project-grid">
                 {PROJECTS.map(project => (
-                    <article key={project.title} className="project-card">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <div className="project-tags">
-                            {project.tags.map(tag => (
-                                <span key={tag}>{tag}</span>
-                            ))}
+                    <a
+                        key={project.title}
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card"
+                    >
+                        <div className="project-card-body">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <div className="project-tags">
+                                {project.tags.map(tag => (
+                                    <span key={tag}>{tag}</span>
+                                ))}
+                            </div>
                         </div>
-                    </article>
+                        <span className="project-link-row">
+                            Visit project <span className="project-arrow">→</span>
+                        </span>
+                    </a>
                 ))}
             </div>
         </section>
